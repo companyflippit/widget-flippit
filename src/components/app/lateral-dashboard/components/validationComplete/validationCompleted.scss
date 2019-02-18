@@ -1,0 +1,35 @@
+.flippit-validation-completed-container{
+  margin-top: 58px;
+  width: 100%;
+  font-family: $font-family;
+  text-align: center;
+  padding-top: 66px;
+  box-sizing: border-box;
+  color: #ffffff;
+
+  .flippit-validation-completed-header{
+    text-align: center;
+    line-height: 1.27;
+    width: 368px;
+    margin: 50px auto 0;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.7px;
+    }
+    .flippit-validation-button{
+      margin-top: 38px;
+      width: 100%;
+      height: 56px;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+      background-color: #3d1980;
+      @include flex-center;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}

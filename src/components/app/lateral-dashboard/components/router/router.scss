@@ -1,0 +1,65 @@
+.router-container{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 100%;
+    .container-header {
+      width: 100%;
+      margin: auto;
+      .logo {
+        margin-top: -28px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        svg{
+          width: 148px; 
+          height: 36px;
+            #iconLogo {
+              stroke: white;
+            }
+            #textLogo {
+              fill: white;
+            }
+        }
+      }
+      .header-container{
+        width: 50%;
+        margin: auto;
+      }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  .router-container{
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 8*5px;
+    width: 90%;
+    margin: 0 auto;
+      .container-header {
+        width: 100%;
+        margin: auto;
+        .logo {
+          margin-top: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          svg{
+            width: 148px; 
+            height: 36px;
+              #iconLogo {
+                stroke: white;
+              }
+              #textLogo {
+                fill: white;
+              }
+          }
+        }
+        .header-container{
+          width: 50%;
+          margin: auto;
+        }
+      }
+  }
+}

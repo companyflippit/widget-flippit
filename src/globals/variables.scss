@@ -1,0 +1,49 @@
+$slider-height: 0.1838235294*$slider-width;
+$slider-border-radius: 0.09191176471*$slider-width;
+
+$open-button-width: 0.3308823529*$slider-width;
+$open-button-height: 0.2941176471*$slider-width;
+
+$input-range-thumb-size: 0.1102941176*$slider-width;
+
+
+$slider-vertical-line-width: 0.003676470588*$slider-width;
+$slider-number-of-flips-container-width: 0.3051470588*$slider-width;
+$slider-input-range-container-width: 0.6911764706*$slider-width;
+
+$slider-vertical-line-height: 0.1102941176*$slider-width;
+
+
+
+$open-button-border-radius: 50% 50% 0 0;
+$open-button-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
+
+
+$slider-shadow: $open-button-shadow;
+$slider-margin-bottom: 20px;
+
+$z-index: 2147483647;
+
+$font-family: 'WorkSans', sans-serif;
+
+$arrow-width: 10px;
+$arrow-height: 5px;
+$arrow-top-margin: 15px;
+
+$lateral-dashboard-width-container: 100vh;
+$lateral-dashboard-width: $lateral-dashboard-width-container*2;
+$lateral-dashboard-height: $lateral-dashboard-width;
+
+$lateral-dashboard-border-radius: 50%;
+$lateral-dashboard-bottom-position: -$lateral-dashboard-width/4;
+$lateral-dashboard-margin-top: 62px;
+
+
+$lateral-dashboard-content-height: 100vh;
+$lateral-dashboard-content-padding: 58px;
+
+$h2-font-size: 22px;
+$h2-line-height: 1.27;
+$h2-letter-spacing: -0.7px;
+
+

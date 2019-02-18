@@ -1,0 +1,154 @@
+$input-range-background-color: linear-gradient(-134deg, #6311FA 0%, #45F2B7 100%);
+$input-range-buttons-background-color: #fff;
+$input-range-buttons-border: 0 solid rgba(255, 255, 255, 0.54);
+$input-range-buttons-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+$input-range-thumb-size: 30px;
+$input-range-track-height: 10px;
+
+.input-range {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  @include flex-center;
+  .left-button,
+  .right-button {
+    @include flex-center;
+    @include noselect;
+    position: absolute;
+    width: 0.83*$input-range-thumb-size;
+    height: $input-range-thumb-size;
+    background-color: $input-range-buttons-background-color;
+    border: $input-range-buttons-border;
+    box-shadow: $input-range-buttons-shadow;
+    color: $arrow-color;
+    letter-spacing: -0.29px;
+    cursor: pointer;
+    font-size: 12px;
+    top: $slider-height/2-$input-range-thumb-size/2;
+  }
+  .left-button {
+    left: -1px;
+    border-radius: 50% 0 0 50%;
+  }
+  .right-button {
+    right: -1px;
+    border-radius: 0 50% 50% 0;
+  }
+  .left-button-big {
+    @include flex-center;
+    @include noselect;
+    position: absolute;
+    width: 0.83*$input-range-thumb-size*2;
+    height: $input-range-thumb-size;
+    background-color: transparent;
+    .left-button,
+    .right-button {
+      @include flex-center;
+      @include noselect;
+      position: absolute;
+      width: 0.83*$input-range-thumb-size;
+      height: $input-range-thumb-size;
+      background-color: $input-range-buttons-background-color;
+      border: $input-range-buttons-border;
+      box-shadow: $input-range-buttons-shadow;
+      color: $arrow-color;
+      letter-spacing: -0.29px;
+      font-size: 12px;
+      top: 0;
+    }
+    .left-button {
+      left: 0;
+      border-radius: 50% 0 0 50%;
+      cursor: pointer;
+    }
+    .right-button {
+      right: 0;
+      border-radius: 0 50% 50% 0;
+    }
+  }
+  .left-button-big {
+    left: -1px;
+  }
+  .right-button-big {
+    @include flex-center;
+    @include noselect;
+    position: absolute;
+    width: 0.83*$input-range-thumb-size*2;
+    height: $input-range-thumb-size;
+    background-color: transparent;
+    .left-button,
+    .right-button {
+      @include flex-center;
+      @include noselect;
+      position: absolute;
+      width: 0.83*$input-range-thumb-size;
+      height: $input-range-thumb-size;
+      background-color: $input-range-buttons-background-color;
+      border: $input-range-buttons-border;
+      box-shadow: $input-range-buttons-shadow;
+      color: $arrow-color;
+      letter-spacing: -0.29px;
+      font-size: 12px;
+      top: 0;
+    }
+    .left-button {
+      left: 0;
+      border-radius: 50% 0 0 50%;
+    }
+    .right-button {
+      right: 0;
+      border-radius: 0 50% 50% 0;
+      cursor: pointer;
+    }
+  }
+  .right-button-big {
+    right: -1px;
+  }
+  .input-container {
+    position: relative;
+    width: 163px;
+    height: 100%;
+    @include flex-center;
+
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 30px;
+      margin: 0;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: $input-range-track-height;
+      cursor: pointer;
+      animation: 0.2s;
+      background-image: $input-range-background-color;
+      border: none;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background-image: $input-range-background-color;
+    }
+  
+    input[type=range]::-webkit-slider-thumb {
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 50%;
+      border: none;
+      height: $input-range-thumb-size;
+      width: $input-range-thumb-size;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -$input-range-track-height;
+      position: relative;
+      z-index: 1;
+    }
+    #bubble-buttons[type=range]::-webkit-slider-thumb  {
+      display: none;
+      -webkit-appearance: none;
+      border: none;
+    }
+  }
+}
+

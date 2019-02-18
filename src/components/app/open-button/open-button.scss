@@ -1,0 +1,47 @@
+.flippit-open-button-container {
+  height: $open-button-height;
+  width: $open-button-width;
+  border-radius: $open-button-border-radius;
+  left: calc(50% - #{$open-button-width/2});
+  position: fixed;
+  bottom: -$slider-height;
+  z-index: $z-index;
+  @include noselect;
+  .open-button-mobile {
+    display: none;
+  }
+  .open-button-desktop {  
+    height: $open-button-height;
+    width: $open-button-width;
+    border-radius: $open-button-border-radius;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .flippit-open-button-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    left: unset;
+    right: 8*2px;
+    bottom: 8*8px;
+    z-index: $z-index;
+    @include noselect;
+    .open-button-mobile {
+      display: block;
+      .button {
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+        background-color: #4398ff;
+        border-radius: 50%;
+        @include flex-center;
+        svg {
+          width: 18px;
+        }
+      }
+    }
+    .open-button-desktop {  
+      display: none;
+    }
+  }
+}

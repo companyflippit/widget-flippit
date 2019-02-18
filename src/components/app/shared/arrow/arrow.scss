@@ -1,0 +1,28 @@
+button {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $open-button-border-radius;
+  border: none;
+  background-color: $open-button-color;
+  cursor: pointer;
+  box-shadow: $open-button-shadow;
+  position: relative;
+  svg {
+    position: absolute;
+    top: $arrow-top-margin;
+    left: calc(#{$open-button-width/2} - #{$arrow-width/2});
+    #arrow {
+      stroke: $arrow-color;
+    }
+  }
+  .flippitInit{
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: calc(#{$open-button-width/2} - #{15px/2});
+  }
+}
+button:focus {
+  outline: 0;
+}

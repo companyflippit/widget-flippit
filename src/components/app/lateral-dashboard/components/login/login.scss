@@ -1,0 +1,150 @@
+.flippit-login-container{
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+  .body {
+    margin: 60px auto 0;
+    width: 100%;
+    height: 100%;
+    h2 {
+      color: $h2-color;
+      font-size: $h2-font-size;
+      line-height: $h2-line-height;
+      letter-spacing: $h2-letter-spacing;
+      text-align: center;
+      margin-bottom: 45px;
+      cursor: default;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.71;
+      color: rgba(255, 255, 255, 0.7);
+      input {
+        box-sizing: border-box;
+        border: none;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        height: 48px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 2px 1px rgba(33, 34, 64, 0.08);
+        background-color: #ffffff;
+        padding-left: 16px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        color: #4a4a4a;
+      }
+      input:focus { 
+        outline: none;
+        border: solid 1px #6311fa;
+      }
+      .input-error {
+        border: solid 1px $error-color;
+
+      }
+    }
+    .checkbox {
+      width: 100%;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .forget-password{
+      p, .error{
+        height: 23px;
+        font-size: 14px;
+        line-height: 1.64;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 0;
+        margin-top: 8px;
+      }
+      p:hover {
+        text-decoration: underline;
+      }
+      .error {
+        color: $error-color;
+        cursor: default;
+      }
+      .error:hover {
+        text-decoration: none;
+      }
+      .error-hide {
+        display: none;
+      }
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      height: 56px;
+      border-radius: 4px;
+      border: none;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+      background-color: #3d1980;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      color: #ffffff;
+      cursor: pointer;
+      outline: none;
+    }
+    .signup{
+      p{
+        cursor: pointer;
+        margin-top: 25px;
+        font-family: 'WorkSans', sans-serif;
+        font-size: 18px;
+        line-height: 1.28;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #ffffff;
+        b{
+          cursor: pointer;
+        }
+        b:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .flippit-login-container{
+    .body {
+      h2 {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: -8*5px;
+        margin-bottom: 8px;
+      }
+      label {
+        font-size: 10px;
+        input {
+          margin-bottom: 4px;
+          font-size: 16px;
+          height: 40px;
+        }
+      }
+      button {
+        margin-top: 8*2px;
+        height: 40px;
+      }
+      .signup{
+        p{
+          margin-top: 8px;
+          font-size: 14px;
+          b:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

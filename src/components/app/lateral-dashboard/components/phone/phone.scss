@@ -1,0 +1,101 @@
+.flippit-phone-container {
+  margin-top: 58px;
+  width: 100%;
+  font-family: $font-family;
+  .phone-container-header {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.27;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.7px;
+    }
+    h3 {
+      width: 75%;
+      margin: 20px auto 0;
+      font-size: 18px;
+      letter-spacing: -0.6px;
+    }
+  }
+  form {
+    margin-top: 88px;
+    text-align: center;
+    #code,
+    #number {
+      padding-left: 10px;
+      background-color: #FFFFFF;
+      box-sizing: border-box;
+      color: #4a4a4a;
+      font-size: 18px;
+      border: none;
+      box-shadow: inset 0 0 2px 1px rgba(33, 34, 64, 0.08);
+      border-radius: 4px;
+      height: 48px;
+    }
+    #number:focus { 
+      outline: none;
+      border: solid 1px #6311fa;
+    }
+    #number::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+    #code {
+      width: 124px;
+    }
+    #number {
+      width: 201px;
+      margin-left: 18px;
+    }
+    .buttons-container {
+      width: 100%;
+      @include flex-center;
+
+      .back,
+      .next {
+        @include flex-center;
+        margin-top: 126px;
+        width: 166px;
+        height: 56px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .back {
+        border: solid 1px #fffcfc;
+        background-color: transparent;
+      }
+      .next {
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+        background-color: #3d1980;
+        border: solid 1px #3d1980;
+        margin-left: 15px;
+      }
+    }
+  }
+  .circles-container {
+    width: 50%;
+    margin: auto;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    .circle {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      border: solid 1px #ffffff;
+      background-color: transparent;
+      margin-right: 16px;
+    }
+    .circle-active {
+      background-color: #ffffff;
+    }
+  }
+
+}

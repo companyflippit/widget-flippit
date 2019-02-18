@@ -1,0 +1,145 @@
+{
+  "namespace": "flippitwidget",
+  "fsNamespace": "flippitwidget",
+  "loader": "../flippitwidget.js",
+  "core": "flippitwidget.6pmipztw.js",
+  "corePolyfilled": "flippitwidget.iicsd9sw.js",
+  "components": {
+    "ion-app": {
+      "bundleIds": {
+        "$": "m9fya8gd"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-arrow": {
+      "bundleIds": {
+        "$": "sh03itfw"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-buy": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-call-to-action": {
+      "bundleIds": {
+        "$": "oq5w9fwf"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-confirm": {
+      "bundleIds": {
+        "$": "9e33ikxm"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-header": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-home": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-input-range": {
+      "bundleIds": {
+        "$": "9e33ikxm"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-lateral-dashboard": {
+      "bundleIds": {
+        "$": "m9fya8gd"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-login": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-logout": {
+      "bundleIds": {
+        "$": "pn1bjg7h"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-message": {
+      "bundleIds": {
+        "$": "9e33ikxm"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-number": {
+      "bundleIds": {
+        "$": "9e33ikxm"
+      }
+    },
+    "ion-onboarding": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-onboarding-2": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-onboarding-3": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-open-button": {
+      "bundleIds": {
+        "$": "oq5w9fwf"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-phone": {
+      "bundleIds": {
+        "$": "j5ijufny"
+      }
+    },
+    "ion-profile": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-router": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-signup": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-slider": {
+      "bundleIds": {
+        "$": "9e33ikxm"
+      },
+      "encapsulation": "shadow"
+    },
+    "ion-types": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-validation-code": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    },
+    "ion-validation-completed": {
+      "bundleIds": {
+        "$": "recdjsd6"
+      }
+    }
+  }
+}

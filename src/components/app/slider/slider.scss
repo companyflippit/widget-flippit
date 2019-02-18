@@ -1,0 +1,58 @@
+.flippit-slider-container {
+  @include noselect;
+  width: $slider-width;
+  height: $open-button-height;
+  position: fixed;
+  bottom: 40px;
+  left: calc(50% - #{$slider-width/2});
+  z-index: $z-index;
+  font-family: $font-family;
+  .flippit-close-button-container {
+    height: $open-button-height;
+    width: $open-button-width;
+    border-radius: $open-button-border-radius;
+    position: absolute;
+    left: calc(50% - #{$open-button-width/2});
+  }
+  .slider {
+    padding: 0;
+    width: $slider-width;
+    height: $slider-height;
+    border: none;
+    border-radius: $slider-border-radius;
+    background-color: $open-button-color;
+    box-shadow: $slider-shadow;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    .profile-container {
+      @include flex-center;
+      flex-direction: column;
+      height: 100%;
+      width: $slider-number-of-flips-container-width;
+      svg {
+        cursor: pointer;
+      }
+      .number-of-flips-container {
+        margin-top: 6px;
+        font-size: 12px;
+        color: #3D1980;
+        letter-spacing: 0.22px;
+        text-align: center;
+        line-height: 12px;
+      }
+    }
+    .vertical-line {
+      width: $slider-vertical-line-width;
+      height: 100%;
+      background: #979797;
+      height: $slider-vertical-line-height;
+      opacity: 0.2;
+    }
+    .input-range-container {
+      width: $slider-input-range-container-width;
+      height: 100%;
+    }
+  }
+}

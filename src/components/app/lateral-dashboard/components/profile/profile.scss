@@ -1,0 +1,79 @@
+.error-message{
+  color: orange;
+  text-align: center;
+}
+.success-message{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.flippit-profile-container{
+  padding-top: 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  font-family: $font-family;
+  form {
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.71;
+      color: #fff;
+      input {
+        box-sizing: border-box;
+        border: none;
+        margin-top: 6px;
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+        height: 48px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 2px 1px rgba(33, 34, 64, 0.08);
+        background-color: #681f74;
+        padding-left: 16px;
+        font-size: 18px;
+        font-weight: 300;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      input:focus { 
+        outline: none;
+      }
+      .input-error {
+        border: solid 1px $error-color;
+      }
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .error-message{
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .success-message{
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .flippit-profile-container{
+    padding-top: 8px;
+    form {
+      label {
+        font-size: 10px;
+        input {
+          margin-bottom: 0;
+          font-size: 16px;
+          height: 40px;
+        }
+        #confirmPassword {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

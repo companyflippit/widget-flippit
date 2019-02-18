@@ -1,0 +1,89 @@
+.flippit-buy-container {
+  padding-top: 8*4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+  h2 {
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+    color: #4a4a4a;
+    @include noselect;
+  }
+  input {
+    margin-top: 12px;
+    width: 100%;
+    height: 48px;
+    box-shadow: inset 0 0 0 1px rgba(33, 34, 64, 0.08);
+    border: none;
+    background-color: rgba(33, 34, 64, 0.02);
+    border-radius: 4px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  input:focus {
+    outline: none;
+    border: solid 1px #6311fa;
+  }
+  .input-group-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .cvv {
+      margin-left: 12px;
+    }
+  }
+  input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 1.33;
+    color: #b8b8c1;
+  }
+  .card-number {
+    margin-top: 42px;
+  }
+  .error {
+    border: solid 1px #FF0079;
+  }
+  p {
+    color: #FF0079;
+    @include noselect;
+    text-align: center;
+  }
+  .error:focus {
+    border: solid 1px #FF0079;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .flippit-buy-container {
+    padding-top: 8px;
+    h2 {
+      display: none;
+    }
+    input {
+      margin-bottom: 8px;
+      font-size: 16px;
+      height: 40px;
+    }
+    .card-number {
+      margin-top: 0px;
+    }
+    .error-message {
+      font-size: 10px;
+    }
+    input::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+  }
+}

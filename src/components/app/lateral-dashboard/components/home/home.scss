@@ -1,0 +1,88 @@
+.flippit-home-container{
+  padding-top: 8*4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 85%;
+  margin: auto;
+  font-family: $font-family;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include noselect;
+  .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .info-flips-container{
+      width: 48%;
+      height: 150px;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 4px;
+      padding: 12px;
+      box-sizing: border-box;
+      text-align: center;
+      h2{
+        margin-top: 0;
+        font-size: 16px;
+        color: #4a4a4a;
+        font-weight: lighter;
+      }
+      h3{
+        font-size: 13px;
+        color: #bbbbbb;
+        font-weight: lighter;
+      }
+      p{
+        margin: 0;
+        font-size: 36px;
+        color: rgba(187, 187, 187, 0.7);
+        span{
+          font-size: 20px;
+          color: #bbbbbb;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .flippit-home-container{
+    height: auto;
+    padding-top: 0;
+    .info-container {
+      width: 100%;
+      flex-direction: column;
+      .info-flips-container{
+        width: 100%;
+        margin-top: 8px;
+        height: 120px; 
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+          margin-top: 0;
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        h3{
+          margin-top: 8px;
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+        p{
+          font-size: 28px;
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

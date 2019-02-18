@@ -1,0 +1,26 @@
+$input-range-background-color: linear-gradient(-134deg, #6311FA 0%, #45F2B7 100%);
+$input-range-buttons-background-color: #fff;
+$input-range-buttons-border: 0 solid rgba(255, 255, 255, 0.54);
+$input-range-buttons-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+$input-range-thumb-size: 30px;
+$input-range-track-height: 10px;
+
+.number{
+  @include flex-center;
+  font-family: 'WorkSans', sans-serif;
+  color: #3D1980;
+  position: absolute;
+  background-color: $input-range-buttons-background-color;
+  border: 1px solid $input-range-buttons-background-color;
+  border: $input-range-buttons-border;
+  box-shadow: $input-range-buttons-shadow;
+  border-radius: 50%;
+  height: $input-range-thumb-size;
+  width: $input-range-thumb-size;
+  cursor: pointer;
+  top: $slider-height/2-$input-range-thumb-size/2;
+  margin: 0;
+}
+.font-size {
+  font-size: 12px;
+}
